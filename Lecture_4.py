@@ -1,5 +1,5 @@
-#Lecture -4
-from fastapi import FastAPI ,Request
+#Lecture -4 
+from fastapi import FastAPI ,Request 
 from MockData import products
 
 app=FastAPI()  #object
@@ -77,9 +77,3 @@ def greet_user(request:Request):   #this is fine but what if we get 300 data the
 # so how will you get the request in above function ,we write request in above function but here fastapi dont knwo what is request ,so we will import request from request
 #so response has all the details of the request and we can get the query parameters from the request object using request.query_params
 #but here we want query_params so we will write request.query_params and it will give us the query parameters in the form of dictionary
-
-
-
-
-
-
